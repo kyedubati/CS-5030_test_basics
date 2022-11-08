@@ -2,7 +2,7 @@
   "name": "api-testing-cs5030",
   "version": "1.0.0",
   "description": "API Testing Basics for CS5030",
-  "main": "index.js",
+  "main": "todo.service.js",
   "scripts": {
     "test": "jest",
     "start": "node main"

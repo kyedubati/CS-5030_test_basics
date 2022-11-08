@@ -22,16 +22,18 @@ class todoservice{
         return this.todos;
     }
 
-    add_todo(todo){
-        // Your code here
+    add_todo(latestTodo){
+        var newTodo = JSON.parse(latestTodo);
+        this.todos.todo.push(newTodo);
     }
 
     delete_todo(id){
-        // Your code here
+        //delete this.todos.todo[id];
+        this.todos.todo.splice(id,1);
     }
 
-    update_todo(id, todo){
-        // Your code here
+    update_todo(id, status){
+        this.todos.todo[id].done=true;
     }
 }
 
